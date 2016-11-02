@@ -1,0 +1,11 @@
+button {
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #337ab7;
+  color: white;
+}
+
+button:focus {
+  outline: none;
+  background-color: #286090;
+}
