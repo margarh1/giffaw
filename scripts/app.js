@@ -14,17 +14,13 @@ $(document).on("ready", function(){
     event.preventDefault();
     callCatGifs();
     increaseOffsetValue();
+    $('.btn-primary').attr('value', 'Load More');
   })
 
-  // $('button').on('click', function(event) {
-  //   increaseOffsetValue();
-  //   callCatGifs();
-  // })
-
- function increaseOffsetValue() {
-  hiddenOffset.attr('value', offsetBy);
-  offsetBy += 25;
- }
+  function increaseOffsetValue() {
+   hiddenOffset.attr('value', offsetBy);
+   offsetBy += 25;
+  }
 });
 
 function onSuccess(json) {
